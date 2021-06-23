@@ -5,7 +5,7 @@ categories: iOS
 tags: swift，Objective-C
 ---
 
-> 前言：下面出现的练习 code 可以再这里找到 
+> 前言：下面出现的练习 code 在 [SwiftyThreadExercise](https://github.com/Davidxiaoshuo/SwiftyThreadExercise)
 
 ### 一些基本概念
 
