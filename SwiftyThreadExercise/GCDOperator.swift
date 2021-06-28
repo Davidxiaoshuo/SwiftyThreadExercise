@@ -164,6 +164,43 @@ class GCDOperator: NSObject {
         print("execute after...")
     }
     
+    func executeBarrier() {
+        let concurrentQueue = DispatchQueue(label: "ai.studio.david.queue.barries", attributes: .concurrent)
+        
+        for i in 0..<10 {
+            concurrentQueue.async {
+                print("reader 1 ==> \(i)")
+            }
+        }
+        
+        concurrentQueue.sync(flags: .barrier) {
+            print("barrier writer")
+        }
+        
+        for i in 10..<20 {
+            concurrentQueue.async {
+                print("reader 2 ==> \(i)")
+            }
+        }
+    }
+    
+    func executeGroup() {
+        let concurrentQueue = DispatchQueue(label: "ai.studio.david.queue.group", attributes: .concurrent)
+        let group = DispatchGroup()
+        concurrentQueue.async(group: group) {
+            sleep(1)
+            print("网络请求1")
+        }
+        
+        concurrentQueue.async(group: group) {
+            sleep(2)
+            print("网络请求2")
+        }
+        group.notify(queue: DispatchQueue.main) {
+            print("刷新页面")
+        }
+    }
+    
 }
 
 extension Date {
