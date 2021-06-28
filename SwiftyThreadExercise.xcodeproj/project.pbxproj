@@ -18,6 +18,8 @@
 		F55100302681E314009C25FE /* NSThreadOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551002F2681E314009C25FE /* NSThreadOperator.swift */; };
 		F55100322682C8BD009C25FE /* GCDOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55100312682C8BD009C25FE /* GCDOperator.swift */; };
 		F551003426832535009C25FE /* NSOperationOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551003326832535009C25FE /* NSOperationOperator.swift */; };
+		F5C6CD8E268765F900D3FB63 /* KeepAliveThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6CD8D268765F900D3FB63 /* KeepAliveThread.swift */; };
+		F5C6CD9026896C3B00D3FB63 /* ThreadKeepAliveSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6CD8F26896C3B00D3FB63 /* ThreadKeepAliveSceneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		F551003326832535009C25FE /* NSOperationOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSOperationOperator.swift; sourceTree = "<group>"; };
 		F551FFFC2681E248009C25FE /* SwiftyThreadExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyThreadExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F551FFFF2681E248009C25FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5C6CD8D268765F900D3FB63 /* KeepAliveThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAliveThread.swift; sourceTree = "<group>"; };
+		F5C6CD8F26896C3B00D3FB63 /* ThreadKeepAliveSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadKeepAliveSceneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 				F551FFFF2681E248009C25FE /* AppDelegate.swift */,
 				F55100012681E248009C25FE /* SceneDelegate.swift */,
 				F55100032681E248009C25FE /* ViewController.swift */,
+				F5C6CD8F26896C3B00D3FB63 /* ThreadKeepAliveSceneViewController.swift */,
 				F55100052681E248009C25FE /* Main.storyboard */,
 				F55100082681E24A009C25FE /* Assets.xcassets */,
 				F551000A2681E24A009C25FE /* LaunchScreen.storyboard */,
@@ -133,6 +138,7 @@
 				F551002F2681E314009C25FE /* NSThreadOperator.swift */,
 				F55100312682C8BD009C25FE /* GCDOperator.swift */,
 				F551003326832535009C25FE /* NSOperationOperator.swift */,
+				F5C6CD8D268765F900D3FB63 /* KeepAliveThread.swift */,
 			);
 			path = SwiftyThreadExercise;
 			sourceTree = "<group>";
@@ -283,6 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C6CD9026896C3B00D3FB63 /* ThreadKeepAliveSceneViewController.swift in Sources */,
+				F5C6CD8E268765F900D3FB63 /* KeepAliveThread.swift in Sources */,
 				F55100042681E248009C25FE /* ViewController.swift in Sources */,
 				F55100002681E248009C25FE /* AppDelegate.swift in Sources */,
 				F55100302681E314009C25FE /* NSThreadOperator.swift in Sources */,

@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    static var isPresented: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.systemBlue
@@ -26,8 +28,16 @@ class ViewController: UIViewController {
 //        gcdOperator.applyIterationHandler()
         
         /// Operation & OperationQueue
-        let operationOperator = NSOperationOperator()
-        operationOperator.createCustomOperation()
+//        let operationOperator = NSOperationOperator()
+//        operationOperator.createCustomOperation()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if ViewController.isPresented { return }
+        let secondViewController = ThreadKeepAliveSceneViewController()
+        self.present(secondViewController, animated: true) {
+            ViewController.isPresented = true
+        }
     }
     
 }
