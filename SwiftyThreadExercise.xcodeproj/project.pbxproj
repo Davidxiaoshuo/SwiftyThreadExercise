@@ -20,6 +20,7 @@
 		F551003426832535009C25FE /* NSOperationOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F551003326832535009C25FE /* NSOperationOperator.swift */; };
 		F5C6CD8E268765F900D3FB63 /* KeepAliveThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6CD8D268765F900D3FB63 /* KeepAliveThread.swift */; };
 		F5C6CD9026896C3B00D3FB63 /* ThreadKeepAliveSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6CD8F26896C3B00D3FB63 /* ThreadKeepAliveSceneViewController.swift */; };
+		F5C6CD922689AFD400D3FB63 /* DropFrameMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6CD912689AFD400D3FB63 /* DropFrameMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F551FFFF2681E248009C25FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5C6CD8D268765F900D3FB63 /* KeepAliveThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAliveThread.swift; sourceTree = "<group>"; };
 		F5C6CD8F26896C3B00D3FB63 /* ThreadKeepAliveSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadKeepAliveSceneViewController.swift; sourceTree = "<group>"; };
+		F5C6CD912689AFD400D3FB63 /* DropFrameMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropFrameMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				F55100312682C8BD009C25FE /* GCDOperator.swift */,
 				F551003326832535009C25FE /* NSOperationOperator.swift */,
 				F5C6CD8D268765F900D3FB63 /* KeepAliveThread.swift */,
+				F5C6CD912689AFD400D3FB63 /* DropFrameMonitor.swift */,
 			);
 			path = SwiftyThreadExercise;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C6CD922689AFD400D3FB63 /* DropFrameMonitor.swift in Sources */,
 				F5C6CD9026896C3B00D3FB63 /* ThreadKeepAliveSceneViewController.swift in Sources */,
 				F5C6CD8E268765F900D3FB63 /* KeepAliveThread.swift in Sources */,
 				F55100042681E248009C25FE /* ViewController.swift in Sources */,

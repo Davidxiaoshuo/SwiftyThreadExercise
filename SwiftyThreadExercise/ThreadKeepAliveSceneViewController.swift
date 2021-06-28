@@ -30,7 +30,7 @@ class ThreadKeepAliveSceneViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.threadOperator?.excute { [weak self] in
+        self.threadOperator?.execute { [weak self] in
             guard let `self` = self else { return }
             self.clickCounter += 1
             print("execute task --> \(self.clickCounter) times")
