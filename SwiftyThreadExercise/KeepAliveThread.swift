@@ -37,7 +37,7 @@ class KeepAliveThread: NSObject {
         thread.start()
     }
     
-    func excute(task: @escaping KeepAliveThreadTask) {
+    func execute(task: @escaping KeepAliveThreadTask) {
         guard let thread = self.thread else { return }
         self.task = task
         self.perform(#selector(onExecutedTask), on: thread, with: nil, waitUntilDone: false)
