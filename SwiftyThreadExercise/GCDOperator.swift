@@ -201,6 +201,30 @@ class GCDOperator: NSObject {
         }
     }
     
+    func executeGroupByOrder() {
+        DispatchQueue.global().async {
+            let concurrentQueue = DispatchQueue(label: "ai.studio.david.queue.group", attributes: .concurrent)
+            let group = DispatchGroup()
+            print("begin......")
+            concurrentQueue.async(group: group) {
+                sleep(10)
+                print("网络请求1")
+            }
+            
+            concurrentQueue.sync(flags: DispatchWorkItemFlags.barrier) {
+                print("aaaa")
+            }
+            
+            concurrentQueue.async(group: group) {
+                sleep(2)
+                print("网络请求2")
+            }
+            group.notify(queue: DispatchQueue.main) {
+                print("刷新页面")
+                print("end......")
+            }
+        }
+    }
 }
 
 extension Date {

@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         /// CGD exercise
         let gcdOperator = GCDOperator()
 //        gcdOperator.applyIterationHandler()
-        gcdOperator.executeGroup()
+        gcdOperator.executeGroupByOrder()
         
         /// Operation & OperationQueue
 //        let operationOperator = NSOperationOperator()
